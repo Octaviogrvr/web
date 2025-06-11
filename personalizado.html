@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/font-icons.css">
+	<link rel="stylesheet" href="coppel.css">
+
+	<title>Coberflex Coppel</title>
+</head>
+<body>
+	<!-- Image and text -->
+	<nav class="navbar navbar-light bg-light fixed-top mb-5">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="https://lemus-dev.web.app/assets/img/logo_coppel.svg" height="42" class="d-inline-block align-top" alt="" loading="lazy">
+			</a>
+			<a href="https://www.coppel.com/">Volver a coppel.com</a>
+		</div>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><img src="car.png" class="img-fluid"> (<span class="total-count"></span>)</button>
+		<button class="clear-cart btn btn-danger"><img src="trash.png" class="img-fluid"></button>
+	</nav>
+
+	<div class="clearfix mt-5 mb-5"></div>
+	<hr>
+
+	<div class="container-copp mb-5">
+		<h3 class="text-center mt-5">Personalizado en 3 pasos</h3>
+		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<a class="nav-link menu1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Salud</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link menu2" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Prevención</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link menu3" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Protección</a>
+			</li>
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height1">
+							<div class="text-center title-service">Reembolso de gastos médicos por accidente</div>
+							<center><img src="accidente.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<center><a href="#" data-name="Reembolso de gastos médicos por accidente $25,000" data-price="100" class="add-to-cart btn btn-outline-primary mb-4 reembolso">Reembolso por: $25,000</a></center>
+								<center><a href="#" data-name="Reembolso de gastos médicos por accidente $50,000" data-price="100" class="add-to-cart btn btn-outline-primary mb-4 reembolso">Reembolso por: $50,000</a></center>
+								<center><a href="#" data-name="Reembolso de gastos médicos por accidente $100,000" data-price="100" class="add-to-cart btn btn-outline-primary reembolso">Reembolso por: $100,000</a></center>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height1">
+							<div class="text-center title-service">Renta diaria por<br>hospitalización</div>
+							<center><img src="hospitalizacion.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<center><a href="#" data-name="Renta diaria por hospitalización $300" data-price="100" class="add-to-cart btn btn-outline-primary mb-4 renta">Renta diraria por hospitalización: $300</a>
+								<a href="#" data-name="Renta diaria por hospitalización $500" data-price="100" class="add-to-cart btn btn-outline-primary mb-4 renta">Renta diraria por hospitalización: $500</a>
+								<a href="#" data-name="Renta diaria por hospitalización $1,000" data-price="100" class="add-to-cart btn btn-outline-primary renta">Renta diraria por hospitalización: $1,000</a></center>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height1">
+							<div class="text-center title-service">Indemnización por<br>enfermedad</div>
+							<center><img src="operacion.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<center><a href="#" data-name="Indenmización por enfermedad $25,000" data-price="100" class="add-to-cart btn btn-outline-primary mb-4 indenmizacion">Indenmización por enfermedad: $25,000</a>
+								<a href="#" data-name="Indenmización por enfermedad $50,000" data-price="100" class="add-to-cart btn btn-outline-primary mb-4 indenmizacion">Indenmización por enfermedad: $50,000</a>
+								<a href="#" data-name="Indenmización por enfermedad $100,000" data-price="100" class="add-to-cart btn btn-outline-primary indenmizacion">Indenmización por enfermedad: $100,000</a></center>
+
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<center><a class="btn btn-primary habilitar siguiente1" id="pills-profile-tab" data-toggle="tab" href="#pills-profile" role="tab" aria-controls="profile" aria-selected="false">Siguiente</a></center>
+
+			</div>
+
+
+			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card mb-3 p-3 servicios-title height2">
+							<div class="text-center title-service">Salud</div>
+							<center><img src="salud.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">Orientación médica y nutricional telefónica / Videoconsulta<br>
+									• Referencia médica y hospitalaria con precio preferencial<br>
+									• Ambulancia<br>
+									• Plan dental - Visual<br>
+									• Descuentos en ópticas, laboratorios y farmacias
+								</p>
+							</div>
+							<center><a href="#" data-name="Salud" data-price="100" class="add-to-cart btn btn-primary salud">Agregar al carrito</a></center>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-3 p-3 servicios-title height2">
+							<div class="text-center title-service">Prevención</div>
+							<center><img src="prevencion.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">• Check up: EGO, Biometría, Química Sanguínea, Mastografía, Electrocardiograma o Ultrasonido. (2 eventos al año, a elegir)<br>
+								• Descuentos en estudios de especialidad</p>
+
+							</div>
+							<center><a href="#" data-name="Prevención" data-price="100" class="add-to-cart btn btn-primary prevencion">Agregar al carrito</a></center>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-3 p-3 servicios-title height2">
+							<div class="text-center title-service">Senior</div>
+							<center><img src="senior.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">• Orientación médica telefónica<br>
+									• Ambulancia<br>
+									• Referencia médica y hospitalaria con precio preferencial<br>
+									• Enfermera o médico a domicilio<br>
+								• Rehabilitación</p>
+
+							</div>
+							<center><a href="#" data-name="Senior" data-price="100" class="add-to-cart btn btn-primary senior">Agregar al carrito</a></center>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="card mb-3 p-3 servicios-title height2">
+							<div class="text-center title-service">Funeraria</div>
+							<center><img src="funeraria.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">• Gestión o pago directo al proveedor por hasta 15,000<br>
+								• Cobertura funeraria familiar</p>
+
+							</div>
+							<center><a href="#" data-name="Funeraria" data-price="100" class="add-to-cart btn btn-primary funeraria">Agregar al carrito</a></center>
+						</div>
+					</div>
+					
+				</div>
+				<center><a class="btn btn-primary siguiente2" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Siguiente</a></center>
+			</div>
+
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height3">
+							<div class="text-center title-service fz22">Bienestar futuro (Colegiatura o Despensa)</div>
+							<center><img src="bienestar.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">Colegiatura: Por hasta dos hijos hasta culminar sus estudios universitarios Despensa: Hasta cumplir la mayoría de edad de los hijos<br>
+									(Por hasta $200,000)
+								</p>
+							</div>
+							<center><a href="#" data-name="Bienestar futuro" data-price="100" class="add-to-cart btn btn-primary bienestar">Agregar al carrito</a></center>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height3">
+							<div class="text-center title-service fz22">Auto<br>&nbsp;</div>
+							<center><img src="auto.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">Responsabilidad Civil (Daños a terceros) por hasta $250,000</p>
+
+							</div>
+							<center><a href="#" data-name="Auto" data-price="100" class="add-to-cart btn btn-primary auto">Agregar al carrito</a></center>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height3">
+							<div class="text-center title-service fz22">Vida<br>&nbsp;</div>
+							<center><img src="vida.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">Cobertura por fallecimiento e inavalidez total y permanente por hasta $100,000</p>
+
+							</div>
+							<center><a href="#" data-name="Vida" data-price="100" class="add-to-cart btn btn-primary vida">Agregar al carrito</a></center>
+						</div>
+					</div>
+
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height3">
+							<div class="text-center title-service">Mascotas</div>
+							<center><img src="mascotas.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">Responsabilidad Civil (Daños a terceros por $50,000) y Asistencias: Orientación médica veterinaria telefónica, 1 evento anual por enfermedad y asistencia funeraria por hasta $10,000</p>
+
+							</div>
+							<center><a href="#" data-name="Mascotas" data-price="100" class="add-to-cart btn btn-primary mascotas">Agregar al carrito</a></center>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3 p-3 servicios-title height3">
+							<div class="text-center title-service">Hogar</div>
+							<center><img src="hogar.jpg" class="img-fluid"></center>
+							<div class="card-body text-secondary">
+								<p class="card-text">Daño a contenidos por hasta $100,000</p>
+
+							</div>
+							<center><a href="#" data-name="Hogar" data-price="100" class="add-to-cart btn btn-primary hogar">Agregar al carrito</a></center>
+						</div>
+					</div>
+					
+				</div>
+				<center><a class="btn btn-primary" href="carrito-personalizado.html">Siguiente</a></center>
+
+			</div>
+		</div>
+		
+	</div>
+
+
+
+	<div class="container-copp">
+		<!-- Modal -->
+		<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Detalles de la compra</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<table class="show-cart table">
+
+						</table>
+						<div>Total: $<span class="total-cart"></span></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="row" id="detalle">
+			<div class="col-md-7">
+				<div class="card">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">Paso 1</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false">Paso 2</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Paso 3</a>
+						</li>
+					</ul>
+					<div class="tab-content h420 p-3" id="myTabContent">
+						<div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+							<h3>Datos del cliente</h3>
+
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre (s)"><br>
+									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellidos (s)"><br>
+									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Número de cliente Coppel (opcional)"><br>
+									<div class="row mb-4">
+										<div class="col">
+											<input type="date" class="form-control" placeholder="Fecha de nacimiento">
+										</div>
+										<div class="col">
+											<input type="phone" class="form-control" placeholder="Teléfono">
+										</div>
+									</div>
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico">
+								</div>
+							</form>
+							<a class="btn btn-primary" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Siguiente</a>
+						</div>
+						<div class="tab-pane fade h420" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+							<h3>Beneficiarios</h3>
+
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo"><br>
+									<div class="row mb-4">
+										<div class="col">
+											<label for="inputState">Fecha de nacimiento</label>
+											<input type="date" class="form-control" placeholder="dd/nn/aaaa">
+										</div>
+										<div class="col">
+											<label for="inputState">Parentesco</label>
+											<select id="inputState" class="form-control">
+												<option selected>Cónyugue</option>
+												<option>Hijo (a)</option>
+												<option>Padre</option>
+												<option>Madre</option>
+												<option>Hermano (a)</option>
+												<option>Amigo (a)</option>
+												<option>Sobrino (a)</option>
+												<option>Abuelo (a)</option>
+											</select>
+										</div>
+									</div>
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico">
+								</div>
+							</form>
+							<a class="btn btn-primary" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Siguiente</a>
+						</div>
+						<div class="tab-pane fade h420" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+							<h3>Forma de pago</h3>
+							<span class="mb-5">Seleccione una forma de pago</span>
+
+							<center><ul class="nav nav-pills mb-3 text-center" id="pills-tab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="pills-home-tab2" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home2" aria-selected="true">Coppel Pay</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="pills-profile-tab2" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile2" aria-selected="false">Tarjeta Débito / Crédito</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="pills-contact-tab2" data-toggle="pill" href="#pills-contact2" role="tab" aria-controls="pills-contact2" aria-selected="false">Telefónica</a>
+								</li>
+							</ul></center>
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab2">
+									<center><img src="coppelpay.png" class="img-fluid" width="250"></center>
+									<p class="text-center">Es tu nueva manera de comprar en linea con tu crédito Coppel</p>
+									<p class="mb-3"><b>Escribe tu correo electrónico y contraseña</b></p>
+									<form>
+										<div class="form-group">
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+										</div>
+										<center><button type="submit" class="btn btn-primary">Iniciar sesión</button></center>
+									</form>
+								</div>
+
+								<div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab2">
+									<form>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Titular de la tarjeta">
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col">
+													<input type="number" class="form-control" placeholder="Número de tarjeta">
+												</div>
+												<div class="col">
+													<input type="text" class="form-control" placeholder="Vencimiento 08/22">
+												</div>
+												<div class="col">
+													<input type="number" class="form-control" placeholder="CCV">
+												</div>
+											</div>
+										</div>
+										<hr>
+										<div class="form-group form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
+										</div>
+										<hr>
+										<center><img src="tdc.jpg" class="img-fluid"></center>
+										
+									</form>
+								</div>
+								<div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab2">
+									Si continua con esta opción de pago se le proporcionará un código que debera proporcionar durante la llamada al siguiente número (55) 7100 1406
+									
+								</div>
+							</div>
+
+							<a class="btn btn-primary mt-5" href="bienvenida.html">Proceder a pago</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5">
+				<div class="card h460">
+					<div class="card-header">
+						Revisa tu plan contratado
+					</div>
+					<div class="card-body">
+						<div><b>Plan contratado:</b><hr> <span class="show-cart"></span></div>
+						<hr>
+						<div style="float: right;"><b>Total:</b> $<span class="total-cart"></span>.00</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	</div>
+
+	<footer>
+		<p class="pfooter text-center">El seguro de hospitalización y de apoyo por fallecimiento es otorgado y amparado por XXXXXX<br>
+			Los servicios de asistencia son otorgados y amparados por TM-Assistance S.A. de C.V.<br>
+			La intermediación y colocación del programa es realizado por TM-Assistance S.A. de C.V., quien garantiza que el seguro que está integrando cuenta con la autorización correspondiente de la<br>Comisión Nacional de Seguros y Fianzas.</p>
+			<p class="text-center">
+				<a class="blc" href="">Aviso de privacidad </a> <a class="blc" href=""> Términos y condiciones </a>
+			</p>
+		</footer>
+
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+		// ************************************************
+// Shopping Cart API
+// ************************************************
+
+var shoppingCart = (function () {
+  // =============================
+  // Private methods and propeties
+  // =============================
+  cart = [];
+
+  // Constructor
+  function Item(name, price, count) {
+  	this.name = name;
+  	this.price = price;
+  	this.count = count;
+  }
+
+  // Save cart
+  function saveCart() {
+  	sessionStorage.setItem("shoppingCart", JSON.stringify(cart));
+  }
+
+  // Load cart
+  function loadCart() {
+  	cart = JSON.parse(sessionStorage.getItem("shoppingCart"));
+  }
+  if (sessionStorage.getItem("shoppingCart") != null) {
+  	loadCart();
+  }
+
+  // =============================
+  // Public methods and propeties
+  // =============================
+  var obj = {};
+
+  // Add to cart
+  obj.addItemToCart = function (name, price, count) {
+  	for (var item in cart) {
+  		if (cart[item].name === name) {
+  			cart[item].count++;
+  			saveCart();
+  			return;
+  		}
+  	}
+  	var item = new Item(name, price, count);
+  	cart.push(item);
+  	saveCart();
+  };
+  // Set count from item
+  obj.setCountForItem = function (name, count) {
+  	for (var i in cart) {
+  		if (cart[i].name === name) {
+  			cart[i].count = count;
+  			break;
+  		}
+  	}
+  };
+  // Remove item from cart
+  obj.removeItemFromCart = function (name) {
+  	for (var item in cart) {
+  		if (cart[item].name === name) {
+  			cart[item].count--;
+  			if (cart[item].count === 0) {
+  				cart.splice(item, 1);
+  			}
+  			break;
+  		}
+  	}
+  	saveCart();
+  };
+
+  // Remove all items from cart
+  obj.removeItemFromCartAll = function (name) {
+  	for (var item in cart) {
+  		if (cart[item].name === name) {
+  			cart.splice(item, 1);
+  			break;
+  		}
+  	}
+  	saveCart();
+  };
+
+  // Clear cart
+  obj.clearCart = function () {
+  	cart = [];
+  	saveCart();
+  };
+
+  // Count cart
+  obj.totalCount = function () {
+  	var totalCount = 0;
+  	for (var item in cart) {
+  		totalCount += cart[item].count;
+  	}
+  	return totalCount;
+  };
+
+  // Total cart
+  obj.totalCart = function () {
+  	var totalCart = 0;
+  	for (var item in cart) {
+  		totalCart += cart[item].price * cart[item].count;
+  	}
+  	return Number(totalCart.toFixed(2));
+  };
+
+  // List cart
+  obj.listCart = function () {
+  	var cartCopy = [];
+  	for (i in cart) {
+  		item = cart[i];
+  		itemCopy = {};
+  		for (p in item) {
+  			itemCopy[p] = item[p];
+  		}
+  		itemCopy.total = Number(item.price * item.count).toFixed(2);
+  		cartCopy.push(itemCopy);
+  	}
+  	return cartCopy;
+  };
+
+  // cart : Array
+  // Item : Object/Class
+  // addItemToCart : Function
+  // removeItemFromCart : Function
+  // removeItemFromCartAll : Function
+  // clearCart : Function
+  // countCart : Function
+  // totalCart : Function
+  // listCart : Function
+  // saveCart : Function
+  // loadCart : Function
+  return obj;
+})();
+
+// *****************************************
+// Triggers / Events
+// *****************************************
+// Add item
+$(".add-to-cart").click(function (event) {
+	event.preventDefault();
+	var name = $(this).data("name");
+	var price = Number($(this).data("price"));
+	shoppingCart.addItemToCart(name, price, 1);
+	displayCart();
+});
+
+// Clear items
+$(".clear-cart").click(function () {
+	shoppingCart.clearCart();
+	displayCart();
+});
+
+function displayCart() {
+	var cartArray = shoppingCart.listCart();
+	var output = "";
+	for (var i in cartArray) {
+		output +=
+		"<tr>" +
+		"<td style='min-width: 470px!important;'>" +
+		cartArray[i].name +
+		"</td>" +
+		"<td style='margin-left:50px;'>$" +
+		cartArray[i].total +
+		"</td>" +
+		"<td><a class='delete-item' data-name=" +
+		cartArray[i].name +
+		"><img src='trash2.png' width='20'></a></td>" +
+		" = " +
+		"</tr>";
+	}
+	$(".show-cart").html(output);
+	$(".total-cart").html(shoppingCart.totalCart());
+	$(".total-count").html(shoppingCart.totalCount());
+}
+
+// Delete item button
+
+$(".show-cart").on("click", ".delete-item", function (event) {
+	var name = $(this).data("name");
+	shoppingCart.removeItemFromCartAll(name);
+	displayCart();
+});
+
+// -1
+$(".show-cart").on("click", ".minus-item", function (event) {
+	var name = $(this).data("name");
+	shoppingCart.removeItemFromCart(name);
+	displayCart();
+});
+// +1
+$(".show-cart").on("click", ".plus-item", function (event) {
+	var name = $(this).data("name");
+	shoppingCart.addItemToCart(name);
+	displayCart();
+});
+
+// Item count input
+$(".show-cart").on("change", ".item-count", function (event) {
+	var name = $(this).data("name");
+	var count = Number($(this).val());
+	shoppingCart.setCountForItem(name, count);
+	displayCart();
+});
+
+// Delete item button
+
+displayCart();
+</script>
+
+<script type="text/javascript">
+	$(".reembolso").click(function(){
+		$(".reembolso").addClass("disabled");
+	});
+</script>
+
+<script type="text/javascript">
+	$(".renta").click(function(){
+		$(".renta").addClass("disabled");
+	});
+</script>
+
+<script type="text/javascript">
+	$(".indenmizacion").click(function(){
+		$(".indenmizacion").addClass("disabled");
+	});
+</script>
+
+<script type="text/javascript">
+	$(".salud").click(function(){
+		$(".salud").addClass("disabled");
+	});
+</script>
+
+<script type="text/javascript">
+	$(".prevencion").click(function(){
+		$(".prevencion").addClass("disabled");
+	});
+</script>
+
+<script type="text/javascript">
+	$(".senior").click(function(){
+		$(".senior").addClass("disabled");
+	});
+</script>
+
+<script type="text/javascript">
+	$(".funeraria").click(function(){
+		$(".funeraria").addClass("disabled");
+	});
+</script>
+
+<script type="text/javascript">
+	$(".bienestar").click(function(){
+		$(".bienestar").addClass("disabled");
+	});
+
+	$(".auto").click(function(){
+		$(".auto").addClass("disabled");
+	});
+
+	$(".vida").click(function(){
+		$(".vida").addClass("disabled");
+	});
+
+	$(".mascotas").click(function(){
+		$(".mascotas").addClass("disabled");
+	});
+
+	$(".hogar").click(function(){
+		$(".hogar").addClass("disabled");
+	});
+
+	$(".siguiente1").click(function(){
+		$(".menu1").removeClass("active");
+		$(".menu2").addClass("active");
+	});
+
+	$(".siguiente2").click(function(){
+		$(".menu2").removeClass("active");
+		$(".menu3").addClass("active");
+	});
+
+</script>
+
+<script type="text/javascript">
+	$(".habilitar").click(function(){
+		$(".add-to-cart").removeClass("disabled");
+	});
+</script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

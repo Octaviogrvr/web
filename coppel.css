@@ -1,0 +1,188 @@
+body {
+	background-color: #EDEEF2;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #0065AE;
+    border-color: #0065AE;
+    text-align: center;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0065ae;
+    border-color: #0065ae;
+}
+
+.bg-coppel {
+	background-color: #0065AE;
+	color: #FFFFFF!important;
+}
+
+.bgw {
+	background-color: #FFFFFF;
+	padding: 35px;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.08);
+}
+
+.card-header {
+	font-size: 1.625rem;
+    border-left: 4px solid #005491;
+    padding-left: .5rem;
+    color: #005491;
+    font-weight: bolder;
+}
+
+.azc {
+	color: #0065AE;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.servicios-title {
+    border-top: 4px solid #005491;
+    padding: .5rem;
+    color: #005491;
+}
+
+.servicios-title2 {
+    border-top: 4px solid #005491;
+    padding: .5rem;
+}
+
+.title-service {
+	font-size: 1.625rem;
+	color: #005491;
+    font-weight: bolder;
+}
+
+.servicios {
+    height: 950px;
+}
+
+.height {
+	height: 550px;
+}
+
+.height1 {
+	height: 750px;
+}
+
+.height2 {
+	height: 750px;
+}
+
+.height3 {
+	height: 600px;
+}
+
+.h515 {
+    height: 515px;
+}
+
+footer {
+    background-color: #192c39;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.pfooter {
+	font-size: 12px;
+	font-weight: 100;
+}
+
+.blc {
+	color: #FFFFFF!important;
+}
+
+.fz10 {
+	font-size: 8px!important;
+}
+
+.right {
+	text-align: right;
+	float: right;
+}
+
+.container-copp {
+	width: 100%;
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-secondary {
+    color: #060606!important;
+}
+
+.h420 {
+	height: 590px;
+}
+
+.h460 {
+	height: 630px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bienvenida1 {
+    height: 500px;
+}
+
+.fz22 {
+    font-size: 22px!important;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-copp {
+	width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+
+    footer {
+    background-color: #192c39;
+    color: #fff;
+    padding: 20px;
+    }
+
+    .slider {
+        margin-top: 95px;
+    }
+
+    .carrito-navs {
+        margin-top: 40px;
+    }
+}
